@@ -1,0 +1,13 @@
+---
+title: "Portfolio"
+---
+
+## Michelle's Projects
+
+HTML & CSS Website 
+
+[Luessen Fundraising](https://mickeylue.github.io/Luessen-Fundraising/)
+
+{{< Include Projects/TechC/_TCHistory.qmd >}}
+
+
