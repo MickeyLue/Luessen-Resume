@@ -4,12 +4,19 @@ project:
 
 website:
   title: "Luessen Resume"
-  navbar:
-    left: 
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
       - href: index.qmd
         text: Resume
       - href: about.qmd
         text: Portfolio
+    tools: 
+      - icon: twitter
+        href: https://twitter.com/LadyLuessen
+      - icon: linkedin
+        href: https://www.linkedin.com/in/michelle-luessen/ 
 
 format:
   html:
@@ -22,7 +29,4 @@ format:
     documentclass: report
   docx: default
   pptx: default
-    
-
-
-
+      

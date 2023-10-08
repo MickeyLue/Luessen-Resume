@@ -42,11 +42,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -66,55 +66,74 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Luessen Resume</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Resume</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">Portfolio</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Resume</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Luessen Resume</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://twitter.com/LadyLuessen" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/michelle-luessen/" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Resume</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Portfolio</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contact-information" id="toc-contact-information" class="nav-link active" data-scroll-target="#contact-information">Contact Information</a></li>
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
   <li><a href="#work-experience" id="toc-work-experience" class="nav-link" data-scroll-target="#work-experience">Work Experience</a></li>
   <li><a href="#certifications" id="toc-certifications" class="nav-link" data-scroll-target="#certifications">Certifications</a></li>
   <li><a href="#research-experience" id="toc-research-experience" class="nav-link" data-scroll-target="#research-experience">Research Experience</a></li>
   <li><a href="#research-presentations" id="toc-research-presentations" class="nav-link" data-scroll-target="#research-presentations">Research Presentations</a></li>
-  <li><a href="#honors-activities" id="toc-honors-activities" class="nav-link" data-scroll-target="#honors-activities">Honors &amp; Activities</a></li>
+  <li><a href="#honors" id="toc-honors" class="nav-link" data-scroll-target="#honors">Honors</a></li>
+  <li><a href="#academic-activities" id="toc-academic-activities" class="nav-link" data-scroll-target="#academic-activities">Academic Activities</a></li>
   <li><a href="#community-involvement" id="toc-community-involvement" class="nav-link" data-scroll-target="#community-involvement">Community Involvement</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="index.pptx"><i class="bi bi-file-slides"></i>Powerpoint</a></li></ul></div></nav>
@@ -139,9 +158,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="contact-information" class="level2">
-<h2 class="anchored" data-anchor-id="contact-information">Contact Information</h2>
-</section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
 <ul>
@@ -165,7 +181,6 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Prepare for and record EEGs, NCTs and ARSs</li>
 <li>Explain procedures to patients</li>
-<li>Help patients to be comfortable with the procedure</li>
 <li>Monitor equipment and patient during recording</li>
 </ul></li>
 </ul></li>
@@ -175,7 +190,6 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Prepare for and record EEGs and NCTs</li>
 <li>Explain procedures to patients</li>
-<li>Help patients to be comfortable with the procedure</li>
 <li>Monitor equipment and patient during recording</li>
 </ul></li>
 </ul></li>
@@ -184,13 +198,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="certifications" class="level2">
 <h2 class="anchored" data-anchor-id="certifications">Certifications</h2>
 <ul>
-<li>Registered Electroencephalographic Technologist (R.EEG.T.), 01/02/2021 - 12/31/2026
+<li>Registered Electroencephalographic Technologist (R.EEG.T.)
 <ul>
 <li>American Board of Registration of Electroencephalographic and Evoked Potential Technologists (ABRET)</li>
+<li>01/02/2021 - 12/31/2026</li>
 </ul></li>
-<li>Certified Nerve Conduction Technologist (CNCT), 06/07/2017 - 12/31/2027
+<li>Certified Nerve Conduction Technologist (CNCT)
 <ul>
 <li>American Board of Electrodiagnostic Medicine (ABEM)</li>
+<li>06/07/2017 - 12/31/2027</li>
 </ul></li>
 </ul>
 </section>
@@ -221,18 +237,18 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Paper Presentation, Honors Thesis</li>
 <li>Personality Traits and Opinion Modeling: The effects of similarity and dissimilarity of novel stimuli on liking another person</li>
-<li>Michelle M. Winings, Amber Koblitz, MS &amp; Clayton J. Hilmert, PhD</li>
+<li>Michelle Winings, Amber Koblitz, MS &amp; Clayton J. Hilmert, PhD</li>
 </ul></li>
 <li>Red River Psychology Conference 2008
 <ul>
 <li>Poster Presentation</li>
 <li>Attraction and Repulsion: The effects of similarity and dissimilarity on liking another person</li>
-<li>Michelle M. Winings, Andrea N. Rooney, BA &amp; Clayton J. Hilmert, PhD</li>
+<li>Michelle Winings, Andrea Rooney, BA &amp; Clayton J. Hilmert, PhD</li>
 </ul></li>
 </ul>
 </section>
-<section id="honors-activities" class="level2">
-<h2 class="anchored" data-anchor-id="honors-activities">Honors &amp; Activities</h2>
+<section id="honors" class="level2">
+<h2 class="anchored" data-anchor-id="honors">Honors</h2>
 <ul>
 <li>Dr.&nbsp;Patricia Beatty Scholarship, NDSU
 <ul>
@@ -244,6 +260,11 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>2006 - 2010</li>
 </ul></li>
+</ul>
+</section>
+<section id="academic-activities" class="level2">
+<h2 class="anchored" data-anchor-id="academic-activities">Academic Activities</h2>
+<ul>
 <li>NDSU Psi Chi - Honor Society in Psychology
 <ul>
 <li>NDSU President
@@ -266,6 +287,8 @@ ul.task-list li input[type="checkbox"] {
 <li>September 2009 - May 2010</li>
 </ul></li>
 </ul></li>
+</ul>
+<ul>
 <li>NDSU Golden Key Honour Society
 <ul>
 <li>Secretary
@@ -296,6 +319,8 @@ ul.task-list li input[type="checkbox"] {
 <li>April 2018 - Present</li>
 </ul></li>
 </ul></li>
+</ul>
+<ul>
 <li>Red River Community Emergency Response Team
 <ul>
 <li>General Volunteer

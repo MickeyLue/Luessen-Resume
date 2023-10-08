@@ -1,0 +1,5 @@
+### Acrylic Painting
+
+This cat and dog watching sunset in a wagon painting is acrylic on canvas.
+
+![Acrylic Pet Painting](Projects\Art\Acrylic.png){fig-alt="An acrylic painting of a dog and cat watching the sunset from a wagon."}

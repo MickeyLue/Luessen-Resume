@@ -42,11 +42,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -66,49 +66,82 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Luessen Resume</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Resume</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
- <span class="menu-text">Portfolio</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">Portfolio</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Luessen Resume</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://twitter.com/LadyLuessen" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/michelle-luessen/" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resume</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Portfolio</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#michelles-projects" id="toc-michelles-projects" class="nav-link active" data-scroll-target="#michelles-projects">Michelle’s Projects</a></li>
+  <li><a href="#technical-communication-projects" id="toc-technical-communication-projects" class="nav-link active" data-scroll-target="#technical-communication-projects">Technical Communication Projects</a>
+  <ul class="collapse">
+  <li><a href="#html-css-website" id="toc-html-css-website" class="nav-link" data-scroll-target="#html-css-website">HTML &amp; CSS Website</a></li>
+  <li><a href="#technical-communication-a-history" id="toc-technical-communication-a-history" class="nav-link" data-scroll-target="#technical-communication-a-history">Technical Communication: A History</a></li>
+  </ul></li>
+  <li><a href="#research-projects" id="toc-research-projects" class="nav-link" data-scroll-target="#research-projects">Research Projects</a>
+  <ul class="collapse">
+  <li><a href="#red-river-valley-psychology-conference-2008" id="toc-red-river-valley-psychology-conference-2008" class="nav-link" data-scroll-target="#red-river-valley-psychology-conference-2008">Red River Valley Psychology Conference, 2008</a></li>
+  <li><a href="#red-river-valley-psychology-conference-2008-1" id="toc-red-river-valley-psychology-conference-2008-1" class="nav-link" data-scroll-target="#red-river-valley-psychology-conference-2008-1">Red River Valley Psychology Conference, 2008</a></li>
+  </ul></li>
+  <li><a href="#art-projects" id="toc-art-projects" class="nav-link" data-scroll-target="#art-projects">Art Projects</a>
+  <ul class="collapse">
+  <li><a href="#acrylic-painting" id="toc-acrylic-painting" class="nav-link" data-scroll-target="#acrylic-painting">Acrylic Painting</a></li>
+  <li><a href="#cricut-layered-shadowbox" id="toc-cricut-layered-shadowbox" class="nav-link" data-scroll-target="#cricut-layered-shadowbox">Cricut Layered Shadowbox</a></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="about.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="about.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="about.pptx"><i class="bi bi-file-slides"></i>Powerpoint</a></li></ul></div></nav>
     </div>
@@ -132,13 +165,57 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="michelles-projects" class="level2">
-<h2 class="anchored" data-anchor-id="michelles-projects">Michelle’s Projects</h2>
-<p>HTML &amp; CSS Website</p>
+<section id="technical-communication-projects" class="level2">
+<h2 class="anchored" data-anchor-id="technical-communication-projects">Technical Communication Projects</h2>
+<section id="html-css-website" class="level3">
+<h3 class="anchored" data-anchor-id="html-css-website">HTML &amp; CSS Website</h3>
+<p>The following link is to an HTML and CSS website that was created for a Digital Technologies class in which my pets are raising money for animal shelters.</p>
 <p><a href="https://mickeylue.github.io/Luessen-Fundraising/">Luessen Fundraising</a></p>
-<p></p>
+</section>
+<section id="technical-communication-a-history" class="level3">
+<h3 class="anchored" data-anchor-id="technical-communication-a-history">Technical Communication: A History</h3>
+<p>How a Profession was Established</p>
+<p>Technical communication is the sharing of information about how things work. This is a brief look at technical communication over time.</p>
+<p><a href="https://1drv.ms/p/s!AlhfPEMnS6ZChRnfvOgAT9GzisX9?e=emi5ca">Technical Communication: A History</a></p>
+</section>
+</section>
+<section id="research-projects" class="level2">
+<h2 class="anchored" data-anchor-id="research-projects">Research Projects</h2>
+<section id="red-river-valley-psychology-conference-2008" class="level3">
+<h3 class="anchored" data-anchor-id="red-river-valley-psychology-conference-2008">Red River Valley Psychology Conference, 2008</h3>
+<p>A poster presentation from the 2008 Red River Valley Psychology Conference.</p>
+<p><a href="https://1drv.ms/b/s!AlhfPEMnS6ZClFzaj4Dvm-6JAWQF?e=8jscfd">Attraction &amp; Repulsion Poster, 2008</a></p>
+</section>
+<section id="red-river-valley-psychology-conference-2008-1" class="level3">
+<h3 class="anchored" data-anchor-id="red-river-valley-psychology-conference-2008-1">Red River Valley Psychology Conference, 2008</h3>
+<p>A paper presentation from the 2008 Red River Valley Psychology Conference.</p>
+<p><a href="https://1drv.ms/b/s!AlhfPEMnS6ZCk23zkxtRd3J8AQqx?e=fVVzrO">Attraction &amp; Repulsion Paper, 2008</a></p>
+</section>
+</section>
+<section id="art-projects" class="level2">
+<h2 class="anchored" data-anchor-id="art-projects">Art Projects</h2>
+<section id="acrylic-painting" class="level3">
+<h3 class="anchored" data-anchor-id="acrylic-painting">Acrylic Painting</h3>
+<p>This cat and dog watching sunset in a wagon painting is acrylic on canvas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Projects\Art\Acrylic.png" class="img-fluid figure-img" alt="An acrylic painting of a dog and cat watching the sunset from a wagon."></p>
+<figcaption class="figure-caption">Acrylic Pet Painting</figcaption>
+</figure>
+</div>
+</section>
+<section id="cricut-layered-shadowbox" class="level3">
+<h3 class="anchored" data-anchor-id="cricut-layered-shadowbox">Cricut Layered Shadowbox</h3>
+<p>This shadowbox image of the northern lights from the forest is a Cricut creation using layered cardstock.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Projects\Art\CricutNL.png" class="img-fluid figure-img" alt="A Cricut Shadow Box picture of the Northern Lights from the forest."></p>
+<figcaption class="figure-caption">Cricut Northern Lights Shadow Box</figcaption>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

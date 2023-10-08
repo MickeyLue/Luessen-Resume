@@ -1,0 +1,6 @@
+### Cricut Layered Shadowbox
+
+This shadowbox image of the northern lights from the forest is a 
+Cricut creation using layered cardstock.
+
+![Cricut Northern Lights Shadow Box](Projects\Art\CricutNL.png){fig-alt="A Cricut Shadow Box picture of the Northern Lights from the forest."}

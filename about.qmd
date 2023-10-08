@@ -2,12 +2,20 @@
 title: "Portfolio"
 ---
 
-## Michelle's Projects
+## Technical Communication Projects
 
-HTML & CSS Website 
+{{< include Projects/TechC/_HTML.qmd >}}
 
-[Luessen Fundraising](https://mickeylue.github.io/Luessen-Fundraising/)
+{{< include Projects/TechC/_TCHistory.qmd >}}
 
-{{< Include Projects/TechC/_TCHistory.qmd >}}
+## Research Projects
 
+{{< include Projects/Research/_RRVConf.qmd >}}
 
+{{< include Projects/Research/_RRVCPaper.qmd >}}
+
+## Art Projects
+
+{{< include Projects/Art/_pets.qmd >}}
+
+{{< include Projects/Art/_cricut.qmd >}}
