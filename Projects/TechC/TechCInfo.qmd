@@ -1,0 +1,9 @@
+
+### Technical Communication: Information Design
+An Infographic of Information Design in Technical Communication
+
+This is a brief look at some of the goals of using information design in technical communication.
+
+[Technical Communication: Information Design](Projects\TechC\Infographic.png)
+
+

@@ -4,5 +4,5 @@ How a Profession was Established
 
 Technical communication is the sharing of information about how things work.  This is a brief look at technical communication over time.
 
-[Technical Communication: A History](https://1drv.ms/p/s!AlhfPEMnS6ZChRnfvOgAT9GzisX9?e=emi5ca)
+[Technical Communication: A History](Projects\TechC\Luessen_History.pdf)
 
